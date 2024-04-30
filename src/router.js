@@ -7,7 +7,7 @@ import { getStateFromPath } from '@react-navigation/native';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import RNBootSplash from 'react-native-bootsplash';
 import PropTypes from 'prop-types';
-import { useFlipper } from '@react-navigation/devtools';
+// import { useFlipper } from '@react-navigation/devtools';
 import { LightTheme } from './theme';
 import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -44,7 +44,7 @@ const App = () => {
 
   const routerReference = useNavigationContainerRef();
 
-  useFlipper(routerReference);
+  // useFlipper(routerReference);
 
   const routeNameRef = useRef();
 

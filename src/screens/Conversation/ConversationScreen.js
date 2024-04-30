@@ -2,7 +2,7 @@ import React, { useMemo, useEffect, useCallback, useState, useRef } from 'react'
 import { useTheme } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useSelector, useDispatch } from 'react-redux';
-import { View, ScrollView, AppState, Dimensions } from 'react-native';
+import { View, ScrollView, AppState, Dimensions, Button } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import * as Sentry from '@sentry/react-native';
 
@@ -350,7 +350,7 @@ const ConversationScreen = () => {
 
   return (
     <SafeAreaView edges={['top', 'left', 'right']} style={styles.container}>
-      <Header headerText={headerText} loading={isLoading} showCount count={conversationCount()} />
+      <Header headerText={headerText} loading={isLoading} showCount count={conversationCount()} children={<Button>D</Button>} />
       <View style={styles.filterContainer}>
         <ScrollView
           horizontal

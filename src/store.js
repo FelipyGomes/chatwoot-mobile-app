@@ -27,11 +27,6 @@ const allReducer = (state, action) => {
   return rootReducer(state, action);
 };
 
-if (__DEV__) {
-  const createDebugger = require('redux-flipper').default;
-  middlewares.push(createDebugger());
-}
-
 const persistedReducer = persistReducer(persistConfig, allReducer);
 
 export const store = configureStore({

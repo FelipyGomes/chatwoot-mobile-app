@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux';
+import { combineReducers, configureStore } from 'redux';
 
 import authSlice from './authSlice';
 import inboxSlice from './inboxSlice';

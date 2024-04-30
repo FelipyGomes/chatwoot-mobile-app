@@ -10,5 +10,7 @@
     "Pressable",
     "reduxjs",
     "Swipeable"
-  ]
+  ],
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.compile.nullAnalysis.mode": "automatic"
 }

@@ -94,6 +94,7 @@ const Header = ({
   headerText,
   onPressLeft,
   onPressRight,
+  children
 }) => {
   const theme = useTheme();
   const styles = useMemo(() => createStyles(theme), [theme]);
@@ -102,12 +103,15 @@ const Header = ({
   return (
     <View style={styles.headerContainer}>
       <View style={styles.headerLeft}>
+      
+
         {leftIcon ? (
           <Pressable style={styles.headerLeftIcon} onPress={onPressLeft}>
-            <Icon icon={leftIcon} color={colors.textDark} size={24} />
+            <Icon icon={leftIcon} color={'colors.textDark'} size={24} />
           </Pressable>
         ) : null}
         <View style={styles.headerCenter}>
+        
           {loading ? (
             <ActivityIndicator
               size="small"

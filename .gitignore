@@ -69,18 +69,18 @@ yarn-error.log
 
 
 # Android release configuration
-android/api-fastlane.json
-android/gradle.properties
-android/app/gradle.properties
+# android/api-fastlane.json
+# android/gradle.properties
+# android/app/gradle.properties
 # Firebase 
-android/app/google-services.json
-ios/GoogleService-Info.plist
+# android/app/google-services.json
+# ios/GoogleService-Info.plist
 
 
 
 # Sentry configuration
-sentry.js
-ios/sentry.properties
-android/sentry.properties
+# sentry.js
+# ios/sentry.properties
+# android/sentry.properties
 
-GoogleService-Info.plist
+# GoogleService-Info.plist
